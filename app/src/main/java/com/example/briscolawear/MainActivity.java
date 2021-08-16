@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.briscolawear.databinding.ActivityMainBinding;
+import com.facebook.FacebookSdk;
 
 import Login.loginClass;
 
@@ -18,6 +19,8 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        FacebookSdk.sdkInitialize(MainActivity.this);
 
         if(isFacebookLoggedIn())
             setContentView(R.layout.activity_main);

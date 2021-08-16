@@ -20,6 +20,9 @@
                Set to true if your app is Standalone, that is, it does not require the handheld
                app to run.
         -->
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
         <meta-data
             android:name="com.google.android.wearable.standalone"
             android:value="true" />
